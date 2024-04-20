@@ -31,33 +31,6 @@
   
   
   <entry>
-    <title>高</title>
-    <link href="/test/"/>
-    <url>/test/</url>
-    
-    <content type="html"><![CDATA[<p>後悔參加的太少</p>]]></content>
-    
-    
-    <categories>
-      
-      <category>高中</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>心得</tag>
-      
-      <tag>學習</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>南九校-資得其樂寒訓</title>
     <link href="/%E5%8D%97%E4%B9%9D%E6%A0%A1-%E8%B3%87%E5%BE%97%E5%85%B6%E6%A8%82%E5%AF%92%E8%A8%93/"/>
     <url>/%E5%8D%97%E4%B9%9D%E6%A0%A1-%E8%B3%87%E5%BE%97%E5%85%B6%E6%A8%82%E5%AF%92%E8%A8%93/</url>
@@ -77,6 +50,33 @@
       <tag>程式</tag>
       
       <tag>營隊</tag>
+      
+      <tag>心得</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>10th-成大邀請賽心得</title>
+    <link href="/2024%E6%88%90%E5%A4%A7%E8%B3%BD%E5%BF%83%E5%BE%97/"/>
+    <url>/2024%E6%88%90%E5%A4%A7%E8%B3%BD%E5%BF%83%E5%BE%97/</url>
+    
+    <content type="html"><![CDATA[<p>先說結果吧,本次止步於初賽,自己的實力嚴重不足,三個小時的時間才寫了50&#x2F;900分左右</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>高中</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>程式</tag>
       
       <tag>心得</tag>
       

@@ -4,6 +4,35 @@
   
   
   <entry>
+    <title>2025學科校內賽心得</title>
+    <link href="/2025%E6%A0%A1%E5%85%A7%E8%B3%BD%E5%BF%83%E5%BE%97/"/>
+    <url>/2025%E6%A0%A1%E5%85%A7%E8%B3%BD%E5%BF%83%E5%BE%97/</url>
+    
+    <content type="html"><![CDATA[<p>這次的校內賽是由明達學長出題的，總共六題，難度非常的高。</p><h2 id="pA-華生的資料注入"><a href="#pA-華生的資料注入" class="headerlink" title="pA 華生的資料注入"></a>pA <strong>華生的資料注入</strong></h2><p>我覺得這題可能有問題因此我選擇打好題敘。</p><h3 id="題文"><a href="#題文" class="headerlink" title="題文"></a>題文</h3><blockquote><p>華生是一名時間旅者。為了避免未來L公司的人工智能「天眼」(SkyEyes)失控導致世界毀滅，她穿越回天眼仍在訓練階段的現在。今日，華生已經成功打入L公司內部，成為一名L公司高層。<br>已知要阻止天眼失控，其中一個條件是需在訓練階段加入夠多符合某些標準的特殊資料。華生自己還要處理太多其他導致天眼失控的因素，於是將產生這些資料交給自己的得意助手－－也就是你。<br>華生對於每筆資料會以 $S,m,M$ 紀錄，代表該筆資料應該符合以下所有條件：</p><ul><li>總和等於 $S$。</li><li>最小值等於 $m$。</li><li>最大值等於 $M$。</li></ul><h4 id="輸入"><a href="#輸入" class="headerlink" title="輸入"></a>輸入</h4><p>輸入第一行包含一個整數 $t$。<br>接下來t行，每行包含整數 $S,m,M$。<br>$1\le t\le1000$<br>$0\le m \le M\le100$</p><h4 id="輸出"><a href="#輸出" class="headerlink" title="輸出"></a>輸出</h4><p>輸出 $t$ 行，每行可包含最多 100 個整數，代表符合對應條件的資料。如果有多種符合條件的解，輸出任一個解即可。已知必有解。</p><h4 id="e-g"><a href="#e-g" class="headerlink" title="e.g."></a>e.g.</h4><p>&#x2F;&#x2F;input<br>2<br>15 1 5<br>16 0 9<br>&#x2F;&#x2F;output<br>5 3 4 1 2<br>0 1 3 3 9</p></blockquote>]]></content>
+    
+    
+    <categories>
+      
+      <category>高中</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>程式</tag>
+      
+      <tag>心得</tag>
+      
+      <tag>競賽</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>精誠高中讀書會</title>
     <link href="/%E7%B2%BE%E8%AA%A0%E9%AB%98%E4%B8%AD%E8%AE%80%E6%9B%B8%E6%9C%83%E8%AC%9B%E5%B8%AB/"/>
     <url>/%E7%B2%BE%E8%AA%A0%E9%AB%98%E4%B8%AD%E8%AE%80%E6%9B%B8%E6%9C%83%E8%AC%9B%E5%B8%AB/</url>
@@ -189,7 +218,7 @@
     <link href="/%E5%8D%97%E4%B9%9D%E6%A0%A1-%E8%B3%87%E5%BE%97%E5%85%B6%E6%A8%82%E5%AF%92%E8%A8%93/"/>
     <url>/%E5%8D%97%E4%B9%9D%E6%A0%A1-%E8%B3%87%E5%BE%97%E5%85%B6%E6%A8%82%E5%AF%92%E8%A8%93/</url>
     
-    <content type="html"><![CDATA[<p>這次寒訓在成大&amp;南一中上課，讓我認識了這個大校園與許許多多的人及電神們.其中我覺得上課的內容非常不錯，從我會的一直到我不會的，而在那麼頂的課程下，行政組也分配了許多活動，帶給我美好的回憶.</p><p>我印象最深的是<strong>贊助商分享</strong>，原以為會是如分享產品或邀請入值等等枯燥乏味的內容，但卻是分享自身經歷或是一些與資訊相關的網站或活動，也讓我可以提前了解一個合格的程式設計師或資安人員在業界所需的能力及工作內容.</p><p>明年我有機會的話還是會想選擇參加，希望這篇心得能幫助有需要的人認識這個營隊.</p><h2 id="上課內容"><a href="#上課內容" class="headerlink" title="上課內容"></a>上課內容</h2><p>因為我是演算組的所以只介紹演算組的(有分為演算組與資安組)</p><h3 id="演算組"><a href="#演算組" class="headerlink" title="演算組"></a>演算組</h3><ul><li><a href="https://zh.wikipedia.org/wiki/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92">Dynamic programming</a></li><li><a href="https://cplusplus.com/reference/algorithm/sort/">Sort</a></li><li><a href="https://www.geeksforgeeks.org/searching-algorithms/">Searching</a></li><li><a href="https://cplusplus.com/reference/stl/">STL</a></li><li><a href="https://en.wikipedia.org/wiki/Greedy_algorithm">Greedy</a></li></ul><p>PS:未按照上課順序&amp;有提供題目讓我們練習但不方便提供</p><h3 id="講義"><a href="#講義" class="headerlink" title="講義"></a>講義</h3><ul><li><a href="https://drive.google.com/drive/folders/1pu1vmSsG-cn0k3-FEyhwNGfa1eSilKR4">上課所使用到的講義</a></li></ul><h2 id="Time-line"><a href="#Time-line" class="headerlink" title="Time-line"></a>Time-line</h2><ul><li><p><strong>DAY1</strong> : 9AM-21.30</p></li><li><p><strong>DAY2</strong> : 9AM-21.30</p></li><li><p><strong>DAY3</strong> : 9AM-17.</p></li></ul><p> Total learning hr : <em>12.5&#x2F;33</em><br> Date : <em>2024&#x2F;2&#x2F;5</em> - <em>2024&#x2F;2&#x2F;7</em></p><h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h3 id="其他活動"><a href="#其他活動" class="headerlink" title="其他活動"></a>其他活動</h3><ul><li>破冰</li><li>晚會</li><li>經驗分享</li><li>贊助商分享</li><li>實境闖關</li></ul><h3 id="住宿地點"><a href="#住宿地點" class="headerlink" title="住宿地點"></a>住宿地點</h3><p>旅社名稱：老曼船長青年旅舍<br>地址：701台南市東區北門路二段2號（大門在火車站出口的全家裡面）<br>旅社官網連結：<a href="https://oldmancaptain.github.io/">https://oldmancaptain.github.io/</a></p><h3 id="分享電神"><a href="#分享電神" class="headerlink" title="分享電神"></a>分享電神</h3><ul><li><a href="https://koyingtw.github.io/about/"><strong>koying</strong></a></li><li><a href="https://hackmd.io/@L39Ai4MITOCY2Aioz54q2g/colten"><strong>Colten</strong></a></li></ul>]]></content>
+    <content type="html"><![CDATA[<p>這次寒訓在成大&amp;南一中上課，讓我認識了這個大校園與許許多多的人及電神們.其中我覺得上課的內容非常不錯，從我會的一直到我不會的，而在那麼頂的課程下，行政組也分配了許多活動，帶給我美好的回憶.</p><p>我印象最深的是<strong>贊助商分享</strong>，原以為會是如分享產品或邀請入值等等枯燥乏味的內容，但卻是分享自身經歷或是一些與資訊相關的網站或活動，也讓我可以提前了解一個合格的程式設計師或資安人員在業界所需的能力及工作內容.</p><p>明年我有機會的話還是會想選擇參加，希望這篇心得能幫助有需要的人認識這個營隊.</p><h2 id="上課內容"><a href="#上課內容" class="headerlink" title="上課內容"></a>上課內容</h2><p>因為我是演算組的所以只介紹演算組的(有分為演算組與資安組)</p><h3 id="演算組"><a href="#演算組" class="headerlink" title="演算組"></a>演算組</h3><ul><li><a href="https://zh.wikipedia.org/wiki/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92">Dynamic programming</a></li><li><a href="https://cplusplus.com/reference/algorithm/sort/">Sort</a></li><li><a href="https://www.geeksforgeeks.org/searching-algorithms/">Searching</a></li><li><a href="https://cplusplus.com/reference/stl/">STL</a></li><li><a href="https://en.wikipedia.org/wiki/Greedy_algorithm">Greedy</a></li></ul><p>PS:未按照上課順序&amp;有提供題目讓我們練習但不方便提供</p><h2 id="Time-line"><a href="#Time-line" class="headerlink" title="Time-line"></a>Time-line</h2><ul><li><p><strong>DAY1</strong> : 9AM-21.30</p></li><li><p><strong>DAY2</strong> : 9AM-21.30</p></li><li><p><strong>DAY3</strong> : 9AM-17.</p></li></ul><p> Total learning hr : <em>12.5&#x2F;33</em><br> Date : <em>2024&#x2F;2&#x2F;5</em> - <em>2024&#x2F;2&#x2F;7</em></p><h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h3 id="其他活動"><a href="#其他活動" class="headerlink" title="其他活動"></a>其他活動</h3><ul><li>破冰</li><li>晚會</li><li>經驗分享</li><li>贊助商分享</li><li>實境闖關</li></ul><h3 id="住宿地點"><a href="#住宿地點" class="headerlink" title="住宿地點"></a>住宿地點</h3><p>旅社名稱：老曼船長青年旅舍<br>地址：701台南市東區北門路二段2號（大門在火車站出口的全家裡面）<br>旅社官網連結：<a href="https://oldmancaptain.github.io/">https://oldmancaptain.github.io/</a></p><h3 id="分享電神"><a href="#分享電神" class="headerlink" title="分享電神"></a>分享電神</h3><ul><li><a href="https://koyingtw.github.io/about/"><strong>koying</strong></a></li><li><a href="https://hackmd.io/@L39Ai4MITOCY2Aioz54q2g/colten"><strong>Colten</strong></a></li></ul>]]></content>
     
     
     <categories>

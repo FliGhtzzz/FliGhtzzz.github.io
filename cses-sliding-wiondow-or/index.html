@@ -16,26 +16,26 @@
   <meta name="author" content="flight">
   <meta name="keywords" content="">
   
-    <meta name="description" content="這次寒訓在成大&amp;南一中上課，讓我認識了這個大校園與許許多多的人及電神們.其中我覺得上課的內容非常不錯，從我會的一直到我不會的，而在那麼頂的課程下，行政組也分配了許多活動，帶給我美好的回憶. 我印象最深的是贊助商分享，原以為會是如分享產品或邀請入值等等枯燥乏味的內容，但卻是分享自身經歷或是一些與資訊相關的網站或活動，也讓我可以提前了解一個合格的程式設計師或資安人員在業界所需的能力及工作內容.">
+    <meta name="description" content="link 這題困擾我蠻久的，因為 or 運算不像 xor 或 + 具有反操作。也就是不能像是 Sliding Window Xor O(1) 滑窗，但是如果拆位的話可能會 TLE。 因此，我們需要一個新的滑窗方法，把原本的陣列先拆成幾塊，然後再滑到某一塊非邊界的點的時候，其 Sliding Window or 就是上個邊界的 or 前墜 or 下個邊界的 or 後墜。 e.g. 原陣列 : 1 2">
 <meta property="og:type" content="article">
-<meta property="og:title" content="南九校-資得其樂寒訓">
-<meta property="og:url" content="https://flightzzz.github.io/%E5%8D%97%E4%B9%9D%E6%A0%A1-%E8%B3%87%E5%BE%97%E5%85%B6%E6%A8%82%E5%AF%92%E8%A8%93/index.html">
+<meta property="og:title" content="CSES Sliding Window or">
+<meta property="og:url" content="https://flightzzz.github.io/cses-sliding-wiondow-or/index.html">
 <meta property="og:site_name" content="flight">
-<meta property="og:description" content="這次寒訓在成大&amp;南一中上課，讓我認識了這個大校園與許許多多的人及電神們.其中我覺得上課的內容非常不錯，從我會的一直到我不會的，而在那麼頂的課程下，行政組也分配了許多活動，帶給我美好的回憶. 我印象最深的是贊助商分享，原以為會是如分享產品或邀請入值等等枯燥乏味的內容，但卻是分享自身經歷或是一些與資訊相關的網站或活動，也讓我可以提前了解一個合格的程式設計師或資安人員在業界所需的能力及工作內容.">
+<meta property="og:description" content="link 這題困擾我蠻久的，因為 or 運算不像 xor 或 + 具有反操作。也就是不能像是 Sliding Window Xor O(1) 滑窗，但是如果拆位的話可能會 TLE。 因此，我們需要一個新的滑窗方法，把原本的陣列先拆成幾塊，然後再滑到某一塊非邊界的點的時候，其 Sliding Window or 就是上個邊界的 or 前墜 or 下個邊界的 or 後墜。 e.g. 原陣列 : 1 2">
 <meta property="og:locale" content="zh_TW">
-<meta property="article:published_time" content="2024-02-08T01:04:54.000Z">
-<meta property="article:modified_time" content="2025-07-26T05:37:09.828Z">
+<meta property="article:published_time" content="2025-08-03T01:04:54.000Z">
+<meta property="article:modified_time" content="2025-08-03T07:27:54.046Z">
 <meta property="article:author" content="flight">
 <meta property="article:tag" content="程式">
-<meta property="article:tag" content="營隊">
 <meta property="article:tag" content="心得">
+<meta property="article:tag" content="cses">
 <meta name="twitter:card" content="summary_large_image">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>南九校-資得其樂寒訓 - flight</title>
+  <title>CSES Sliding Window or - flight</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -201,7 +201,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="南九校-資得其樂寒訓"></span>
+            <span id="subtitle" data-typed-text="CSES Sliding Window or"></span>
           
         </div>
 
@@ -212,8 +212,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2024-02-08 09:04" pubdate>
-          2024年2月8日 上午
+        <time datetime="2025-08-03 09:04" pubdate>
+          2025年8月3日 上午
         </time>
       </span>
     
@@ -224,7 +224,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          385 字
+          305 字
         
       </span>
     
@@ -235,7 +235,7 @@
         
         
         
-          4 分鐘
+          3 分鐘
         
       </span>
     
@@ -280,44 +280,18 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">南九校-資得其樂寒訓</h1>
+            <h1 id="seo-header">CSES Sliding Window or</h1>
             
             
               <div class="markdown-body">
                 
-                <p>這次寒訓在成大&amp;南一中上課，讓我認識了這個大校園與許許多多的人及電神們.其中我覺得上課的內容非常不錯，從我會的一直到我不會的，而在那麼頂的課程下，行政組也分配了許多活動，帶給我美好的回憶.</p>
-<p>我印象最深的是<strong>贊助商分享</strong>，原以為會是如分享產品或邀請入值等等枯燥乏味的內容，但卻是分享自身經歷或是一些與資訊相關的網站或活動，也讓我可以提前了解一個合格的程式設計師或資安人員在業界所需的能力及工作內容.</p>
-<p>明年我有機會的話還是會想選擇參加，希望這篇心得能幫助有需要的人認識這個營隊.</p>
-<h2 id="上課內容"><a href="#上課內容" class="headerlink" title="上課內容"></a>上課內容</h2><p>因為我是演算組的所以只介紹演算組的(有分為演算組與資安組)</p>
-<h3 id="演算組"><a href="#演算組" class="headerlink" title="演算組"></a>演算組</h3><ul>
-<li><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92">Dynamic programming</a></li>
-<li><a target="_blank" rel="noopener" href="https://cplusplus.com/reference/algorithm/sort/">Sort</a></li>
-<li><a target="_blank" rel="noopener" href="https://www.geeksforgeeks.org/searching-algorithms/">Searching</a></li>
-<li><a target="_blank" rel="noopener" href="https://cplusplus.com/reference/stl/">STL</a></li>
-<li><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Greedy_algorithm">Greedy</a></li>
-</ul>
-<p>PS:未按照上課順序&amp;有提供題目讓我們練習但不方便提供</p>
-<h2 id="Time-line"><a href="#Time-line" class="headerlink" title="Time-line"></a>Time-line</h2><ul>
-<li><p><strong>DAY1</strong> : 9AM-21.30</p>
-</li>
-<li><p><strong>DAY2</strong> : 9AM-21.30</p>
-</li>
-<li><p><strong>DAY3</strong> : 9AM-17.</p>
-</li>
-</ul>
-<p> Total learning hr : <em>12.5&#x2F;33</em><br> Date : <em>2024&#x2F;2&#x2F;5</em> - <em>2024&#x2F;2&#x2F;7</em></p>
-<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h3 id="其他活動"><a href="#其他活動" class="headerlink" title="其他活動"></a>其他活動</h3><ul>
-<li>破冰</li>
-<li>晚會</li>
-<li>經驗分享</li>
-<li>贊助商分享</li>
-<li>實境闖關</li>
-</ul>
-<h3 id="住宿地點"><a href="#住宿地點" class="headerlink" title="住宿地點"></a>住宿地點</h3><p>旅社名稱：老曼船長青年旅舍<br>地址：701台南市東區北門路二段2號（大門在火車站出口的全家裡面）<br>旅社官網連結：<a target="_blank" rel="noopener" href="https://oldmancaptain.github.io/">https://oldmancaptain.github.io/</a></p>
-<h3 id="分享電神"><a href="#分享電神" class="headerlink" title="分享電神"></a>分享電神</h3><ul>
-<li><a target="_blank" rel="noopener" href="https://koyingtw.github.io/about/"><strong>koying</strong></a></li>
-<li><a target="_blank" rel="noopener" href="https://hackmd.io/@L39Ai4MITOCY2Aioz54q2g/colten"><strong>Colten</strong></a></li>
-</ul>
+                <p><a target="_blank" rel="noopener" href="https://cses.fi/problemset/task/3426">link</a></p>
+<p>這題困擾我蠻久的，因為 <code>or</code> 運算不像 <code>xor</code> 或 <code>+</code> 具有反操作。<br>也就是不能像是 <strong>Sliding Window Xor</strong> <code>O(1)</code> 滑窗，但是如果拆位的話可能會 TLE。</p>
+<p>因此，我們需要一個新的滑窗方法，把原本的陣列先拆成幾塊，然後再滑到某一塊非邊界的點的時候，其 Sliding Window or 就是上個邊界的 or 前墜 <code>or</code> 下個邊界的 or 後墜。</p>
+<p>e.g.</p>
+<p>原陣列 : 1 2 3 4 5 6 7 8 -&gt; 每三個一塊<br>前墜or : 1 3 3|4 5 7|7 15<br>後墜or : 3 3 3|7 7 6|15 8<br>求 [2,4] 的 or &#x3D; 到 2 的 後墜or <code>or</code> 的前墜or -&gt;3 <code>or</code> 4</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;bits/stdc++.h&gt;</span></span><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> std;<br><span class="hljs-meta">#<span class="hljs-keyword">define</span> int long long</span><br><span class="hljs-function"><span class="hljs-type">signed</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>&#123;<br>    ios_base::<span class="hljs-built_in">sync_with_stdio</span>(<span class="hljs-number">0</span>), cin.<span class="hljs-built_in">tie</span>(<span class="hljs-number">0</span>), cout.<span class="hljs-built_in">tie</span>(<span class="hljs-number">0</span>);<br>    <span class="hljs-type">int</span> n, m, a, b, c, x;<br>    cin&gt;&gt;n&gt;&gt;m&gt;&gt;x&gt;&gt;a&gt;&gt;b&gt;&gt;c;<br>    <span class="hljs-function">vector&lt;<span class="hljs-type">int</span>&gt; <span class="hljs-title">arr</span><span class="hljs-params">(n+<span class="hljs-number">2</span>, <span class="hljs-number">0</span>)</span>, <span class="hljs-title">pre</span><span class="hljs-params">(n+<span class="hljs-number">2</span>, <span class="hljs-number">0</span>)</span>, <span class="hljs-title">suf</span><span class="hljs-params">(n+<span class="hljs-number">2</span>, <span class="hljs-number">0</span>)</span></span>;<br>    arr[<span class="hljs-number">1</span>]=x;<br>    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">2</span>;i&lt;=n;i++) arr[i]=(a*arr[i<span class="hljs-number">-1</span>]+b)%c;<br>    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">1</span>, j=n;i&lt;=n;i++, j--) &#123;    <span class="hljs-comment">//這邊要好好想</span><br>        <span class="hljs-keyword">if</span>(j%m==<span class="hljs-number">0</span>) suf[j]=arr[j];<br>        <span class="hljs-keyword">else</span> suf[j]=suf[j+<span class="hljs-number">1</span>]|arr[j];<br>        <span class="hljs-keyword">if</span>((i<span class="hljs-number">-1</span>)%m==<span class="hljs-number">0</span>) pre[i]=arr[i];<br>        <span class="hljs-keyword">else</span> pre[i]=pre[i<span class="hljs-number">-1</span>]|arr[i];<br>    &#125;<br>    <span class="hljs-type">int</span> now=suf[<span class="hljs-number">1</span>], temp;<br>    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> l=<span class="hljs-number">2</span>, r=m+<span class="hljs-number">1</span>;r&lt;=n;l++, r++) &#123;<br>        <span class="hljs-keyword">if</span>(l%m==<span class="hljs-number">1</span>) temp=suf[l];<br>        <span class="hljs-keyword">else</span> temp=suf[l]|pre[r];<br>        now^=temp;<br>    &#125;<br>    cout&lt;&lt;now;<br>&#125;<br></code></pre></td></tr></table></figure>
+
 
                 
               </div>
@@ -326,36 +300,15 @@
             <div>
               <div class="post-metas my-3">
   
-    <div class="post-meta mr-3 d-flex align-items-center">
-      <i class="iconfont icon-category"></i>
-      
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/%E9%AB%98%E4%B8%AD/" class="category-chain-item">高中</a>
-  
-  
-
-      </span>
-    
-  
-</span>
-
-    </div>
-  
   
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
         <a href="/tags/%E7%A8%8B%E5%BC%8F/" class="print-no-link">#程式</a>
       
-        <a href="/tags/%E7%87%9F%E9%9A%8A/" class="print-no-link">#營隊</a>
-      
         <a href="/tags/%E5%BF%83%E5%BE%97/" class="print-no-link">#心得</a>
+      
+        <a href="/tags/cses/" class="print-no-link">#cses</a>
       
     </div>
   
@@ -367,8 +320,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>南九校-資得其樂寒訓</div>
-      <div>https://flightzzz.github.io/南九校-資得其樂寒訓/</div>
+      <div>CSES Sliding Window or</div>
+      <div>https://flightzzz.github.io/cses-sliding-wiondow-or/</div>
     </div>
     <div class="license-meta">
       
@@ -380,7 +333,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>發布於</div>
-          <div>2024年2月8日</div>
+          <div>2025年8月3日</div>
         </div>
       
       
@@ -412,15 +365,15 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2024%E6%88%90%E5%A4%A7%E8%B3%BD%E5%BF%83%E5%BE%97/" title="10th-成大邀請賽心得">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">10th-成大邀請賽心得</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
+                    
+                      <a href="/2025IONC/" title="2025IONC心得">
+                        <span class="hidden-mobile">2025IONC心得</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
                     
                   </article>
                 </div>

@@ -4,11 +4,11 @@
   
   
   <entry>
-    <title>2025資芽心得</title>
-    <link href="/2025%E8%B3%87%E8%8A%BD/"/>
-    <url>/2025%E8%B3%87%E8%8A%BD/</url>
+    <title>CSES Sliding Window or</title>
+    <link href="/cses-sliding-wiondow-or/"/>
+    <url>/cses-sliding-wiondow-or/</url>
     
-    <content type="html"><![CDATA[<p>心得來的有點晚 : &lt;</p><h1 id="心得"><a href="#心得" class="headerlink" title="心得"></a>心得</h1><p>去年開始打競程鰻想跟 kzzz 一起去資芽的，但是後來想說算了，今年覺得禮拜六都沒事做就去了。</p><p>先說結論，自己蠻後悔的，以為自己拿不到優結，二階考就考的不是非常認真，但自己就只有二階考沒過。<br>我上的是南區的資芽，今年的講師是 布丁+colten，但是 colten 很忙，所以大部分是 布丁上課。由於第一階段的東西我基本上都學過了所以跳過，今年的第二階段的上課內容是投票決定的，我很喜歡這個投票結果，講了一堆我不熟或是我不想要碰的東西，學了很多新東西，含金量很高，價格相較於其他類似性質的也是非常便宜了。</p><p>這是我的怪目標 : 每次見到 colten 都跟他合照。—直到目前都成功</p><p>這是我的證書</p><iframe   src="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/FliGhtzzz/PICTURE-online/f919059218cb358c91ee0374a88031cb43749851/資訊之芽證書.pdf&embedded=true"   width="700"   height="1000"   style="border:none;"></iframe>]]></content>
+    <content type="html"><![CDATA[<p><a href="https://cses.fi/problemset/task/3426">link</a></p><p>這題困擾我蠻久的，因為 <code>or</code> 運算不像 <code>xor</code> 或 <code>+</code> 具有反操作。<br>也就是不能像是 <strong>Sliding Window Xor</strong> <code>O(1)</code> 滑窗，但是如果拆位的話可能會 TLE。</p><p>因此，我們需要一個新的滑窗方法，把原本的陣列先拆成幾塊，然後再滑到某一塊非邊界的點的時候，其 Sliding Window or 就是上個邊界的 or 前墜 <code>or</code> 下個邊界的 or 後墜。</p><p>e.g.</p><p>原陣列 : 1 2 3 4 5 6 7 8 -&gt; 每三個一塊<br>前墜or : 1 3 3|4 5 7|7 15<br>後墜or : 3 3 3|7 7 6|15 8<br>求 [2,4] 的 or &#x3D; 到 2 的 後墜or <code>or</code> 的前墜or -&gt;3 <code>or</code> 4</p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;bits/stdc++.h&gt;</span></span><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> std;<br><span class="hljs-meta">#<span class="hljs-keyword">define</span> int long long</span><br><span class="hljs-function"><span class="hljs-type">signed</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>&#123;<br>    ios_base::<span class="hljs-built_in">sync_with_stdio</span>(<span class="hljs-number">0</span>), cin.<span class="hljs-built_in">tie</span>(<span class="hljs-number">0</span>), cout.<span class="hljs-built_in">tie</span>(<span class="hljs-number">0</span>);<br>    <span class="hljs-type">int</span> n, m, a, b, c, x;<br>    cin&gt;&gt;n&gt;&gt;m&gt;&gt;x&gt;&gt;a&gt;&gt;b&gt;&gt;c;<br>    <span class="hljs-function">vector&lt;<span class="hljs-type">int</span>&gt; <span class="hljs-title">arr</span><span class="hljs-params">(n+<span class="hljs-number">2</span>, <span class="hljs-number">0</span>)</span>, <span class="hljs-title">pre</span><span class="hljs-params">(n+<span class="hljs-number">2</span>, <span class="hljs-number">0</span>)</span>, <span class="hljs-title">suf</span><span class="hljs-params">(n+<span class="hljs-number">2</span>, <span class="hljs-number">0</span>)</span></span>;<br>    arr[<span class="hljs-number">1</span>]=x;<br>    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">2</span>;i&lt;=n;i++) arr[i]=(a*arr[i<span class="hljs-number">-1</span>]+b)%c;<br>    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">1</span>, j=n;i&lt;=n;i++, j--) &#123;    <span class="hljs-comment">//這邊要好好想</span><br>        <span class="hljs-keyword">if</span>(j%m==<span class="hljs-number">0</span>) suf[j]=arr[j];<br>        <span class="hljs-keyword">else</span> suf[j]=suf[j+<span class="hljs-number">1</span>]|arr[j];<br>        <span class="hljs-keyword">if</span>((i<span class="hljs-number">-1</span>)%m==<span class="hljs-number">0</span>) pre[i]=arr[i];<br>        <span class="hljs-keyword">else</span> pre[i]=pre[i<span class="hljs-number">-1</span>]|arr[i];<br>    &#125;<br>    <span class="hljs-type">int</span> now=suf[<span class="hljs-number">1</span>], temp;<br>    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> l=<span class="hljs-number">2</span>, r=m+<span class="hljs-number">1</span>;r&lt;=n;l++, r++) &#123;<br>        <span class="hljs-keyword">if</span>(l%m==<span class="hljs-number">1</span>) temp=suf[l];<br>        <span class="hljs-keyword">else</span> temp=suf[l]|pre[r];<br>        now^=temp;<br>    &#125;<br>    cout&lt;&lt;now;<br>&#125;<br></code></pre></td></tr></table></figure>]]></content>
     
     
     
@@ -17,6 +17,8 @@
       <tag>程式</tag>
       
       <tag>心得</tag>
+      
+      <tag>cses</tag>
       
     </tags>
     
@@ -37,9 +39,30 @@
       
       <tag>程式</tag>
       
+      <tag>營隊</tag>
+      
       <tag>心得</tag>
       
-      <tag>營隊</tag>
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>2025資芽心得</title>
+    <link href="/2025%E8%B3%87%E8%8A%BD/"/>
+    <url>/2025%E8%B3%87%E8%8A%BD/</url>
+    
+    <content type="html"><![CDATA[<p>心得來的有點晚 : &lt;</p><h1 id="心得"><a href="#心得" class="headerlink" title="心得"></a>心得</h1><p>去年開始打競程鰻想跟 kzzz 一起去資芽的，但是後來想說算了，今年覺得禮拜六都沒事做就去了。</p><p>先說結論，自己蠻後悔的，以為自己拿不到優結，二階考就考的不是非常認真，但自己就只有二階考沒過。<br>我上的是南區的資芽，今年的講師是 布丁+colten，但是 colten 很忙，所以大部分是 布丁上課。由於第一階段的東西我基本上都學過了所以跳過，今年的第二階段的上課內容是投票決定的，我很喜歡這個投票結果，講了一堆我不熟或是我不想要碰的東西，學了很多新東西，含金量很高，價格相較於其他類似性質的也是非常便宜了。</p><p>這是我的怪目標 : 每次見到 colten 都跟他合照。—直到目前都成功</p><p>這是我的證書</p><iframe   src="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/FliGhtzzz/PICTURE-online/f919059218cb358c91ee0374a88031cb43749851/資訊之芽證書.pdf&embedded=true"   width="700"   height="1000"   style="border:none;"></iframe>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>程式</tag>
+      
+      <tag>心得</tag>
       
     </tags>
     
@@ -301,9 +324,9 @@
       
       <tag>程式</tag>
       
-      <tag>心得</tag>
-      
       <tag>營隊</tag>
+      
+      <tag>心得</tag>
       
     </tags>
     

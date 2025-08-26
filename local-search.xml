@@ -50,29 +50,6 @@
   
   
   <entry>
-    <title>2025IONC心得</title>
-    <link href="/2025IONC/"/>
-    <url>/2025IONC/</url>
-    
-    <content type="html"><![CDATA[<p>今年是第二次去。</p><h1 id="心得"><a href="#心得" class="headerlink" title="心得"></a>心得</h1><h2 id="DAY-1"><a href="#DAY-1" class="headerlink" title="DAY 1"></a>DAY 1</h2><p>去年選火車站，等了快一個小時，還沒吃午餐。<br>今年選自己去，吃了麵框框，還是覺得很好吃。</p><p>Day 1 是教基礎技巧(語法)，然後打趣味賽，但我實在不會閱讀測驗 : &lt;。</p><p><a href="https://ioncamp-internal.github.io/2025_scoreboard/day1/ranking/">DAY1版</a> RK15</p><h2 id="DAY-2"><a href="#DAY-2" class="headerlink" title="DAY 2"></a>DAY 2</h2><p>Day 1 是教資結&amp;圖論，然後個人賽。</p><p>今年的資結還是很難，還是聽不懂，會的只有之前就會的。<br>但是圖論倒是吸收了超級多，非常開心。</p><p><a href="https://ioncamp-internal.github.io/2025_scoreboard/day2/ranking/">DAY2版</a> RK3<br>原本pD是最後才要拿滿，想給 TLE 驚喜，但是做爛了。<br>還是覺得自己跟暴力人差距好大。</p><h2 id="DAY-3-5"><a href="#DAY-3-5" class="headerlink" title="DAY 3~5"></a>DAY 3~5</h2><p>都是團體賽，我跟 TLE &amp;&amp; 草貓一組，三天RK1，最後一天斷網。</p><p>感覺都打得還不錯。</p><h2 id="FINAL"><a href="#FINAL" class="headerlink" title="FINAL"></a>FINAL</h2><p>這幾天其實還蠻為了升學焦慮了，令我印象最深刻的是林鼎陽學長，他人很好，個性率真，原本在問 Temmie 特選的事，後來變成跟他聊。 獲益良多。<br>還認識了暴力人，會了如何處理所有的Sliding window。<br>他真的好強。<br>最後經驗分享的時候也獲得許多跟特選與競賽程式有關的知識。</p>]]></content>
-    
-    
-    
-    <tags>
-      
-      <tag>程式</tag>
-      
-      <tag>營隊</tag>
-      
-      <tag>心得</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>2025資芽心得</title>
     <link href="/2025%E8%B3%87%E8%8A%BD/"/>
     <url>/2025%E8%B3%87%E8%8A%BD/</url>
@@ -86,6 +63,29 @@
       <tag>程式</tag>
       
       <tag>心得</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>2025IONC心得</title>
+    <link href="/2025IONC/"/>
+    <url>/2025IONC/</url>
+    
+    <content type="html"><![CDATA[<p>今年是第二次去。</p><h1 id="心得"><a href="#心得" class="headerlink" title="心得"></a>心得</h1><h2 id="DAY-1"><a href="#DAY-1" class="headerlink" title="DAY 1"></a>DAY 1</h2><p>去年選火車站，等了快一個小時，還沒吃午餐。<br>今年選自己去，吃了麵框框，還是覺得很好吃。</p><p>Day 1 是教基礎技巧(語法)，然後打趣味賽，但我實在不會閱讀測驗 : &lt;。</p><p><a href="https://ioncamp-internal.github.io/2025_scoreboard/day1/ranking/">DAY1版</a> RK15</p><h2 id="DAY-2"><a href="#DAY-2" class="headerlink" title="DAY 2"></a>DAY 2</h2><p>Day 1 是教資結&amp;圖論，然後個人賽。</p><p>今年的資結還是很難，還是聽不懂，會的只有之前就會的。<br>但是圖論倒是吸收了超級多，非常開心。</p><p><a href="https://ioncamp-internal.github.io/2025_scoreboard/day2/ranking/">DAY2版</a> RK3<br>原本pD是最後才要拿滿，想給 TLE 驚喜，但是做爛了。<br>還是覺得自己跟暴力人差距好大。</p><h2 id="DAY-3-5"><a href="#DAY-3-5" class="headerlink" title="DAY 3~5"></a>DAY 3~5</h2><p>都是團體賽，我跟 TLE &amp;&amp; 草貓一組，三天RK1，最後一天斷網。</p><p>感覺都打得還不錯。</p><h2 id="FINAL"><a href="#FINAL" class="headerlink" title="FINAL"></a>FINAL</h2><p>這幾天其實還蠻為了升學焦慮了，令我印象最深刻的是林鼎陽學長，他人很好，個性率真，原本在問 Temmie 特選的事，後來變成跟他聊。 獲益良多。<br>還認識了暴力人，會了如何處理所有的Sliding window。<br>他真的好強。<br>最後經驗分享的時候也獲得許多跟特選與競賽程式有關的知識。</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>程式</tag>
+      
+      <tag>心得</tag>
+      
+      <tag>營隊</tag>
       
     </tags>
     
@@ -347,9 +347,9 @@
       
       <tag>程式</tag>
       
-      <tag>營隊</tag>
-      
       <tag>心得</tag>
+      
+      <tag>營隊</tag>
       
     </tags>
     
